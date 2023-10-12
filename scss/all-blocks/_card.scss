@@ -1,0 +1,141 @@
+.card {
+    margin-bottom: 400px;
+    padding: 0px 20px;
+
+    .container {
+        background-image: url("../img/Group13.png");
+        padding-top: 100px;
+        max-width: 1111px;
+        align-self: 100%;
+        height: 196px;
+        background-size: contain;
+        background-repeat: no-repeat;
+        display: flex;
+    }
+}
+
+.card__box {
+    max-width: 255px;
+    width: 100%;
+    margin-left: -80px;
+    margin-top: 40px;
+    margin-bottom: 189px;
+
+}
+
+.card__box {
+    margin-left: 60px;
+}
+
+.card__heading {
+    width: 100%;
+    color: var(--color-grey);
+    text-align: center;
+    font-family: 'Fraunces';
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 32px;
+}
+
+.card__text {
+    max-width: 255px;
+    width: 100%;
+    color: #333D4B;
+    text-align: center;
+    font-family: 'Barlow';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px;
+}
+
+.card__pic {
+    display: block;
+}
+
+.card__pico {
+    display: none;
+}
+
+.card__mini__box {
+    max-width: 282px;
+}
+
+
+@media only screen and (max-width: 750px) {
+    .card .container {
+        background: url("../img/Group132.png") no-repeat;
+        max-width: 689px;
+        width: 100%;
+        height: 118px;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 1300px;
+    }
+
+    .card__box {
+        max-width: 650px;
+        width: 100%;
+        margin-left: 30px;
+        margin-bottom: 189px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .card__box + .card__box {
+        margin-top: -40px;
+    }
+
+    .card__heading {
+        text-align: start;
+    }
+
+    .card__text {
+        max-width: 282px;
+        width: 100%;
+    }
+
+
+}
+
+@media only screen and (max-width: 400px) {
+
+    .card .container {
+        background: url("../../img/Group7.png") no-repeat;
+        max-width: 350px;
+        width: 100%;
+        height: 72px;
+        margin-bottom: 1300px;
+    }
+
+}
+
+@media only screen and (max-width: 570px) {
+    .card__box {
+        max-width: 650px;
+        width: 100%;
+        margin-left: 30px;
+        margin-bottom: 189px;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 20px;
+    }
+
+    .card__heading {
+        text-align: center;
+    }
+
+    .card__text {
+        padding-left: 10px;
+    }
+
+    .card__img {
+        display: none;
+    }
+
+    .card__pico {
+        display: block;
+        margin-left: 50px;
+    }
+}
